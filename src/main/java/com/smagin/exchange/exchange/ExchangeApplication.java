@@ -10,4 +10,5 @@ public class ExchangeApplication {
         SpringApplication.run(ExchangeApplication.class, args);
     }
 
+
 }
