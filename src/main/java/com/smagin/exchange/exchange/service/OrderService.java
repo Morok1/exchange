@@ -15,6 +15,7 @@ public class OrderService {
     private OrderRepository repository;
 
     public List<Order> getAll(){
+        log.info("Orders " + repository.findAll());
         return repository.findAll();
     }
 

@@ -8,7 +8,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import java.util.List;
 import java.util.Optional;
 
-@RepositoryRestResource(collectionResourceRel = "orders", path = "orders")
+
 public interface OrderRepository extends JpaRepository<Order, Long> {
     List<Order> findAll();
 

@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
 
-@Entity(name = "ORDER")
+@Entity(name = "ORDERR")
 @Data
 public class Order {
     @Id
