@@ -1,8 +1,21 @@
 package com.smagin.exchange.exchange.converters;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.smagin.exchange.exchange.dto.OrderDto;
+import com.smagin.exchange.exchange.model.Order;
 import org.springframework.stereotype.Component;
 
 @Component
-public class OrderConterter {
+public class OrderConterter implements Converter<Order, OrderDto> {
+
+    @Override
+    public OrderDto convert(Order order) {
+        OrderDto dto = new OrderDto();
+
+        dto.setId(order.getId());
+        dto.setNumber(order.getNumber());
+        dto.setVolume(order.getVolume());
+        dto.setPrice(order.getPrice());
+
+        return dto;
+    }
 }
