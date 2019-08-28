@@ -20,8 +20,8 @@ public class Order {
     @Column(name = "number")
     private Long number;
 
-    @ManyToOne(optional = false,  cascade = CascadeType.ALL)
-    @JoinColumn(name = "id")
+    @ManyToOne
+    @JoinColumn(name = "id", updatable = false, insertable = false)
     private Instrument instrument;
 
 }
