@@ -1,5 +1,6 @@
 package com.smagin.exchange.exchange.controller;
 
+import com.smagin.exchange.exchange.dto.OrderDto;
 import com.smagin.exchange.exchange.model.Order;
 import com.smagin.exchange.exchange.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class OrderController {
     private OrderService service;
 
     @GetMapping("/orders")
-    public List<Order> orders(){
+    public List<OrderDto> orders(){
         return service.getAll();
     }
 }
