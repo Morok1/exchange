@@ -2,9 +2,7 @@ package com.smagin.exchange.exchange.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity(name = "ORDERR")
@@ -21,5 +19,9 @@ public class Order {
 
     @Column(name = "number")
     private Long number;
+
+    @ManyToOne(optional = false,  cascade = CascadeType.ALL)
+    @JoinColumn(name = "id")
+    private Instrument instrument;
 
 }
