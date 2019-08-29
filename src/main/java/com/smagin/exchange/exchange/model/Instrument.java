@@ -1,9 +1,12 @@
 package com.smagin.exchange.exchange.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "Instrument")
+@Data
 public class Instrument {
 
     @Id
