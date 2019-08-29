@@ -12,7 +12,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Component
-@Profile("dao")
 public class OrderDao {
     private JdbcTemplate jdbcTemplate;
     private final static String SELECT_ALL = "SELECT * FROM ORDERR";

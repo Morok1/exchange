@@ -8,7 +8,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.Optional;
 
-@Profile("nodao")
 public interface OrderRepository extends JpaRepository<Order, Long> {
     List<Order> findAll();
 
