@@ -8,7 +8,6 @@ import java.util.List;
 @Entity(name = "Instrument")
 @Data
 public class Instrument {
-
     @Id
     private Long id;
 
