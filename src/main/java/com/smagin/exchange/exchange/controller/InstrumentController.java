@@ -1,7 +1,6 @@
 package com.smagin.exchange.exchange.controller;
 
 import com.smagin.exchange.exchange.dto.InstrumentDTO;
-import com.smagin.exchange.exchange.model.Instrument;
 import com.smagin.exchange.exchange.service.InstrumentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

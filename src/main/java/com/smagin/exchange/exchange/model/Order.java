@@ -21,7 +21,6 @@ public class Order {
     private Long number;
 
     @ManyToOne
-    @JoinColumn(name = "id", updatable = false, insertable = false)
+    @JoinColumn(name="order_id")
     private Instrument instrument;
-
 }
