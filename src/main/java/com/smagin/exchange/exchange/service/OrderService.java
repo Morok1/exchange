@@ -24,7 +24,8 @@ public class OrderService {
 
     public List<OrderDto> getAll(){
         log.info("Orders " + repository.findAll());
-        return repository.findAll().stream().map(s -> converter.convert(s)).collect(Collectors.toList());
+        List<OrderDto> dtos = repository.findAll().stream().map(s -> converter.convert(s)).collect(Collectors.toList());
+        return dtos;
     }
 
 }
