@@ -2,7 +2,6 @@ package com.smagin.exchange.exchange.service;
 
 import com.smagin.exchange.exchange.converters.InstrumentConverter;
 import com.smagin.exchange.exchange.dto.InstrumentDTO;
-import com.smagin.exchange.exchange.model.Instrument;
 import com.smagin.exchange.exchange.repository.InstrumentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
