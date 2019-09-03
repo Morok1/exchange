@@ -21,6 +21,10 @@ public class InstrumentConverter implements Converter<Instrument, InstrumentDTO>
     public InstrumentDTO convert(Instrument it) {
         InstrumentDTO dto = new InstrumentDTO();
 
+        if(it == null){
+            return new InstrumentDTO();
+        }
+
         dto.setId(it.getId());
         dto.setOrders(it
                 .getOrders()
