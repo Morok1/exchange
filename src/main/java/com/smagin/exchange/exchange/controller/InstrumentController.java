@@ -27,9 +27,9 @@ public class InstrumentController {
         return service.findAll();
     }
 
-    @GetMapping(value = "id")
-    public Instrument findById(){
-        return service.findById(@PathVariable("id") Long id);
+    @GetMapping(value = "/{id}")
+    public InstrumentDTO findById(@PathVariable("id") Long id){
+        return service.findById(id);
     }
 
     @ExceptionHandler(value = Exception.class)
