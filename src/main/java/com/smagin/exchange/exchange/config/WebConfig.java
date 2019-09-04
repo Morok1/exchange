@@ -1,4 +1,4 @@
-package com.smagin.exchange.exchange;
+package com.smagin.exchange.exchange.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import java.util.List;
 @EnableWebMvc
 @Configuration
 @ComponentScan({"com.smagin.exchange.exchange"})
-public class Config implements WebMvcConfigurer {
+public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {

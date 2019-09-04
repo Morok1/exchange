@@ -1,4 +1,4 @@
-package com.smagin.exchange.exchange;
+package com.smagin.exchange.exchange.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
