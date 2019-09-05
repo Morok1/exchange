@@ -17,10 +17,10 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        converters.add(new XmlBeamHttpMessageConverter());
+//        converters.add(new XmlBeamHttpMessageConverter());
     }
-    private HttpMessageConverter<Object> createXmlHttpMessageConverter(){
-        MarshallingHttpMessageConverter  converter = new MarshallingHttpMessageConverter();
-        return converter;
-    }
+//    private HttpMessageConverter<Object> createXmlHttpMessageConverter(){
+//        MarshallingHttpMessageConverter  converter = new MarshallingHttpMessageConverter();
+//        return converter;
+//    }
 }
